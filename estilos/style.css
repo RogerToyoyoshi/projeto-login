@@ -1,0 +1,109 @@
+@charset 'UTF-8';
+
+/* Paleta de cores 
+
+    Azul: #008DFC
+    Azul cinza: #A3C7EA
+    
+
+*/
+
+:root {
+    --cor0: #008DFC;
+    --cor1: #A3C7EA;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    background: linear-gradient(to bottom, var(--cor1), var(--cor0));
+    height: 100vh;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    height: 575px;
+    width: 300px;
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+div#imagem {
+    width: 100%;
+    height: 40%;
+    background-image: url('../imagens/pato.jpg');
+    background-size: cover;
+    background-position: right;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+div#formulario h1{
+    margin: 10px;
+    text-align: center;
+}
+
+div#formulario p {
+    margin: 15px;
+    text-align: center;
+}
+
+div#formulario p.campo {
+    margin: 20px;
+    padding: 10px;
+    background-color: var(--cor1);
+}
+
+div#formulario p.campo > label {
+    display: none;
+}
+
+div#formulario p.campo > input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.botao {
+    display: block;
+    margin: auto;
+    padding: 5px;
+    width: 100%;
+
+    font-size: 18px;
+
+    background-color: var(--cor0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+a.botao {
+
+    background-color: white;
+    color: var(--cor0);
+
+    text-decoration: none;
+    border: 1px solid var(--cor0);
+}
