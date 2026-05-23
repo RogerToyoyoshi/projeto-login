@@ -35,7 +35,6 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
 
     height: 575px;
     width: 300px;
@@ -44,6 +43,10 @@ section#login {
     border-radius: 15px;
 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+    transform: translate(-50%,-50%);
+    transition: width 0.2s, height 0.2s;
+    transition-timing-function: ease;
 }
 
 div#imagem {
@@ -69,18 +72,29 @@ div#formulario p {
 
 div#formulario p.campo {
     margin: 20px;
-    padding: 10px;
+    height: 40px;
     background-color: var(--cor1);
+}
+
+span.material-symbols-outlined {
+    color: black;
+    font-size: 2em;
+    width: 40px;
+    padding: 4px;
+}
+
+div#formulario p.campo > input {
+    font-size: 1em;
+    width: calc(100% - 60px);
+    height: 80%;
+    border-radius: 5px;
+    padding: 4px;
+    border: none;
+    transform: translateY(-11px);
 }
 
 div#formulario p.campo > label {
     display: none;
-}
-
-div#formulario p.campo > input {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
 }
 
 .botao {
